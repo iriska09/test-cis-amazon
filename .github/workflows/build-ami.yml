@@ -40,4 +40,5 @@ jobs:
           packer build -var "subnet_id=${{ secrets.AWS_SUBNET_ID }}" \
                        -var "iam_instance_profile=${{ secrets.AWS_IAM_INSTANCE_PROFILE }}" \
                        -var "source_ami=${{ secrets.AWS_SOURCE_AMI }}" \
+                       -var "region=${{ secrets.AWS_REGION }}" \
                        packer-template.pkr.hcl
