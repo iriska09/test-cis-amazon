@@ -16,8 +16,8 @@ __pycache__/
 
 # Packer
 packer_cache/
-*.pkrvars.hcl
-*.pkrvar.hcl
+# *.pkrvars.hcl
+# *.pkrvar.hcl
 variables.pkrvar.hcl
 
 # Terraform (if you include any)
