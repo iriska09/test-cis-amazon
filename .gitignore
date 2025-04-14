@@ -1,0 +1,54 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python/Ansible
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.retry
+
+# Ansible vault or secret files
+*.vault
+*.secrets
+*.key
+
+# Packer
+packer_cache/
+*.pkrvars.hcl
+*.pkrvar.hcl
+variables.pkrvar.hcl
+
+# Terraform (if you include any)
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+
+# Logs
+*.log
+
+# Shell history or temporary scripts
+*.sh~
+*.bak
+*.swp
+*.tmp
+
+# IDE and editor stuff
+.vscode/
+.idea/
+*.code-workspace
+
+# Credentials
+*.pem
+*.crt
+*.key
+.env
+.env.*
+
+# Secrets (just in case)
+secrets.*
+config.yaml
+config.yml
+
