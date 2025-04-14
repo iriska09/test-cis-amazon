@@ -37,4 +37,7 @@ jobs:
       - name: Run Packer Build
         run: |
           packer init .
-          packer build -var-file="variables.pkrvar.hcl" packer-template.pkr.hcl
+          packer build -var "subnet_id=${{ secrets.AWS_SUBNET_ID }}" \
+                       -var "iam_instance_profile=${{ secrets.AWS_IAM_INSTANCE_PROFILE }}" \
+                       -var "source_ami=${{ secrets.AWS_SOURCE_AMI }}" \
+                       packer-template.pkr.hcl
