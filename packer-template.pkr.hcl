@@ -11,10 +11,10 @@ packer {
   }
 }
 
-variable "subnet_id" {}
-variable "iam_instance_profile" {}
-variable "region" {}
-variable "source_ami" {}
+# variable "subnet_id" {}
+# variable "iam_instance_profile" {}
+# variable "region" {}
+# variable "source_ami" {}
 
 source "amazon-ebs" "al3-cis" {
   ami_name                = "al2023-cis-hardened-{{timestamp}}"
